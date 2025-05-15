@@ -18,11 +18,17 @@ Ce projet explore l'utilisation des **Large Language Models (LLMs)** et des outi
 
 vision-llm-project/
 ├── data/ # Images d'entrée, descriptions, bases
+
 ├── models/ # Scripts BLIP, CLIP, LLaVA
+
 ├── pipeline/ # Traitement complet : image → réponse
+
 ├── app/ # Interface utilisateur (Gradio)
+
 ├── requirements.txt # Dépendances Python
+
 ├── .gitignore # Fichiers à ignorer par Git
+
 └── README.md # Description du projet
 
 
