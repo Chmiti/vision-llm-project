@@ -1,0 +1,10 @@
+torch
+transformers
+accelerate
+diffusers
+Pillow
+gradio
+sentencepiece
+openai
+faiss-cpu
+ 
