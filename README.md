@@ -75,13 +75,13 @@ VISION-LLM-PROJECT/
 
 🔜 Ces limites m’ont inspiré un projet plus ambitieux, où je vais :
 
-Fine-tuner BLIP et CLIP sur un dataset spécialisé (ex. panneaux de signalisation, objets médicaux…)
+    1-Fine-tuner BLIP et CLIP sur un dataset spécialisé (ex. panneaux de signalisation, objets médicaux…)
 
-Créer une base multimodale enrichie (image + texte + tags)
+    2-Créer une base multimodale enrichie (image + texte + tags)
 
-Intégrer un LLM open-source finement ajusté pour du Q&A intelligent
+    3-Intégrer un LLM open-source finement ajusté pour du Q&A intelligent
 
-Optimiser le système avec quantization / onnx / GPU / Docker
+    4-Optimiser le système avec quantization / onnx / GPU / Docker
 
 💡 Ce projet servira donc de fondation pour une version plus robuste, plus rapide et plus précise d’un système de question-réponse visuelle intelligent.
 
@@ -94,10 +94,10 @@ Spécialisé en Traitement d’image et Intelligence Artificielle
 ⭐ Pourquoi ce projet ?
 Ce projet montre ma capacité à :
 
-Intégrer plusieurs modèles IA dans un pipeline cohérent
+-Intégrer plusieurs modèles IA dans un pipeline cohérent
 
-Concevoir un système multi-modèle basé sur l'image et le langage
+-Concevoir un système multi-modèle basé sur l'image et le langage
 
-Construire une interface interactive et exploitable en local
+-Construire une interface interactive et exploitable en local
 
-Prendre du recul sur les limites et identifier des perspectives concrètes
+-Prendre du recul sur les limites et identifier des perspectives concrètes
