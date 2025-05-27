@@ -62,7 +62,7 @@ VISION-LLM-PROJECT/
 ├── pipeline/             # Étapes de pipeline
 ├── data/                 # Images, index FAISS, métadonnées
 ├── .gradio/ .env .gitignore requirements.txt README.md
-
+```
 ⚠️ Limitations actuelles et ouverture:
 
 🎯 Précision variable des captions générées (manque d’adaptation au domaine)
