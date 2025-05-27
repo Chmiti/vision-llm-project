@@ -1,80 +1,103 @@
-# 🧠 Vision + LLM Project — Raisonner sur des images avec l'IA générative
+# 🧠 Vision-Language Intelligent QA System
 
-Ce projet explore l'utilisation des **Large Language Models (LLMs)** et des outils de **vision par ordinateur** pour analyser, décrire et interagir avec des images. Il combine des modèles de vision (BLIP-2, CLIP, LLaVA) avec des LLMs (GPT, Mistral, etc.) pour développer un raisonnement multimodal.
-
----
-
-## 🎯 Objectifs
-
-- Générer automatiquement des **légendes d'images** (vision → texte)
-- Poser des **questions sur une image** (prompt engineering)
-- Répondre intelligemment avec un **LLM**
-- (Bonus) Ajouter un **système RAG** : recherche augmentée avec `CLIP` + `FAISS`
-- Créer une interface interactive via **Gradio**
+Un projet de génération de légendes d'images, question-réponse visuelle et raisonnement assisté par LLM, combinant les modèles BLIP, CLIP, FAISS et une interface Gradio.
 
 ---
 
-## 🧱 Structure du projet
+## 📸 Fonctionnalités principales
 
-vision-llm-project/
-├── data/ # Images d'entrée, descriptions, bases
-
-├── models/ # Scripts BLIP, CLIP, LLaVA
-
-├── pipeline/ # Traitement complet : image → réponse
-
-├── app/ # Interface utilisateur (Gradio)
-
-├── requirements.txt # Dépendances Python
-
-├── .gitignore # Fichiers à ignorer par Git
-
-└── README.md # Description du projet
-
+- 🔍 Génération de légendes à partir d’images (BLIP)
+- ❓ Question-Réponse visuelle avec prompt engineering
+- 🧠 Raisonnement intelligent à l’aide d’un LLM (OpenAI GPT)
+- 📚 Système RAG : Recherche augmentée via CLIP + FAISS
+- 🖥️ Interface interactive via Gradio
 
 ---
 
-## 🔧 Technologies utilisées
+## 🛠️ Stack technique
 
-- 🖼️ `BLIP-2`, `CLIP`, `LLaVA`
-- 🤖 `transformers`, `OpenAI`, `Mistral`
-- 🧠 `PyTorch`, `sentencepiece`, `accelerate`
-- 🔍 `FAISS`, `Chroma` (RAG)
-- 💻 `Gradio` (interface)
-
----
-
-## 🚧 Avancement
-
-- ✅ Initialisation du dépôt et de la structure
-- ✅ Environnement Python + dépendances
-- ⏳ Génération de légende avec BLIP-2
-- ⏳ Intégration d’un LLM pour raisonnement
-- ⏳ Création de l’interface utilisateur
-- ⏳ (optionnel) Ajout d’un module RAG
-- ⏳ (optionnel) Fine-tuning d’un mini LLM
+| Composant        | Rôle                                          |
+|------------------|-----------------------------------------------|
+| `BLIP`           | Génération automatique de légendes d’images   |
+| `CLIP`           | Encodage visuel et recherche d’images similaires |
+| `FAISS`          | Indexation rapide pour recherche de similarité |
+| `OpenAI GPT`     | Raisonnement et génération de réponses         |
+| `Gradio`         | Interface web simple et rapide                 |
+| `Python`         | Langage principal (avec PyTorch, Transformers) |
 
 ---
 
-## 📸 Exemple de pipeline
+## 🧪 Démo rapide
 
-1. Upload d’une image
-2. Génération de la description (`BLIP-2`)
-3. Construction d’un prompt : *"Voici une scène : [description]. Que peut-on en conclure ?"*
-4. Réponse générée par un LLM
-5. (Bonus) Recherche d’images similaires et injection dans le prompt (RAG)
-
----
-
-## 📄 Licence
-
-Projet personnel open-source – libre d’utilisation à but pédagogique.
+1. 📤 Upload une image
+2. ✍️ Pose une question (ex: *Quel est ce panneau ?*)
+3. 🤖 Le système :
+   - Génère une légende avec BLIP
+   - Cherche des images similaires avec CLIP + FAISS
+   - Envoie le tout à GPT pour obtenir une réponse contextualisée
+4. 💬 Réponse affichée via Gradio
 
 ---
 
-## 👤 Auteur
+## 🔧 Lancer le projet
 
-Taha Chmiti – Élève-ingénieur en électronique, spécialisé en IA et traitement d’image  
-🔗 [LinkedIn](https://www.linkedin.com/in/taha-chmiti/)  
-📫 taha.chmiti@etu.enseirb-matmeca.fr
+```bash
+# Crée ton environnement
+python -m venv venv
+source venv/bin/activate  # ou venv\Scripts\activate sous Windows
 
+# Installe les dépendances
+pip install -r requirements.txt
+
+# Lance l'app Gradio
+python app.py
+📁 Organisation du projet
+bash
+Copy
+Edit
+VISION-LLM-PROJECT/
+│
+├── app/                  # Fichiers principaux d’inférence
+├── models/               # Scripts pour BLIP, CLIP, FAISS
+├── pipeline/             # Étapes de pipeline
+├── data/                 # Images, index FAISS, métadonnées
+├── .gradio/ .env .gitignore requirements.txt README.md
+
+⚠️ Limitations actuelles et ouverture:
+
+🎯 Précision variable des captions générées (manque d’adaptation au domaine)
+
+📉 Qualité des réponses dépend fortement de la base CLIP + FAISS
+
+🧊 Temps de réponse élevé sans optimisation hardware (GPU)
+
+🧠 LLM non fine-tuné sur les requêtes spécifiques du domaine
+
+🔜 Ces limites m’ont inspiré un projet plus ambitieux, où je vais :
+
+Fine-tuner BLIP et CLIP sur un dataset spécialisé (ex. panneaux de signalisation, objets médicaux…)
+
+Créer une base multimodale enrichie (image + texte + tags)
+
+Intégrer un LLM open-source finement ajusté pour du Q&A intelligent
+
+Optimiser le système avec quantization / onnx / GPU / Docker
+
+💡 Ce projet servira donc de fondation pour une version plus robuste, plus rapide et plus précise d’un système de question-réponse visuelle intelligent.
+
+👤 Auteur
+Taha Chmiti
+Élève-ingénieur à l’ENSEIRB-Matmeca
+Spécialisé en Traitement d’image et Intelligence Artificielle
+📫 taha.chmiti@enseirb-matmeca.fr
+
+⭐ Pourquoi ce projet ?
+Ce projet montre ma capacité à :
+
+Intégrer plusieurs modèles IA dans un pipeline cohérent
+
+Concevoir un système multi-modèle basé sur l'image et le langage
+
+Construire une interface interactive et exploitable en local
+
+Prendre du recul sur les limites et identifier des perspectives concrètes
