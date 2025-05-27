@@ -1,0 +1,19 @@
+[
+  { "filename": "curve_left.png", "description": "⚠️ Left curve ahead" },
+  { "filename": "curve_right.png", "description": "⚠️ Right curve ahead" },
+  { "filename": "danger.png", "description": "⚠️ General danger" },
+  { "filename": "dead_end.jpg", "description": "🚫 Dead end" },
+  { "filename": "double_curve.png", "description": "⚠️ Double curve ahead" },
+  { "filename": "give_way.png", "description": "⚠️ Yield / Give way" },
+  { "filename": "interdit.png", "description": "🚫 No entry" },
+  { "filename": "no_motorcyle.jpg", "description": "🚫 No motorcycles allowed" },
+  { "filename": "no_right_turn.jpg", "description": "↪️ No right turn" },
+  { "filename": "no_stopping.png", "description": "🚫 No stopping allowed" },
+  { "filename": "speed_limit.jpg", "description": "🚫 Speed limit 70 km/h" },
+  { "filename": "speed_limit2.png", "description": "🚫 Speed limit 60 km/h" },
+  { "filename": "stop_sign1.png", "description": "🛑 Stop sign" },
+  { "filename": "stop_sign2.jpg", "description": "🛑 Stop sign" },
+  { "filename": "stop_sign3.jpg", "description": "🛑 Stop sign" },
+  { "filename": "turn_left.png", "description": "⬅️ Turn left" },
+  { "filename": "weigh_limit.png", "description": "🚫 Weight limit 5.5T" }
+]

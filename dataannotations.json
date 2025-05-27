@@ -1,0 +1,66 @@
+[
+  {
+    "filename": "curve_left.png",
+    "description": "\u26a0\ufe0f Left curve ahead"
+  },
+  {
+    "filename": "curve_right.png",
+    "description": "\u26a0\ufe0f Right curve ahead"
+  },
+  {
+    "filename": "danger.png",
+    "description": "\u26a0\ufe0f General danger"
+  },
+  {
+    "filename": "dead_end.jpg",
+    "description": "\ud83d\udeab Dead end"
+  },
+  {
+    "filename": "double_curve.png",
+    "description": "\u26a0\ufe0f Double curve ahead"
+  },
+  {
+    "filename": "give_way.png",
+    "description": "\u26a0\ufe0f Yield / Give way"
+  },
+  {
+    "filename": "interdit.png",
+    "description": "\ud83d\udeab No entry"
+  },
+  {
+    "filename": "no_motorcyle.jpg",
+    "description": "\ud83d\udeab No motorcycles allowed"
+  },
+  {
+    "filename": "no_right_turn.jpg",
+    "description": "\u21aa\ufe0f No right turn"
+  },
+  {
+    "filename": "no_stopping.png",
+    "description": "\ud83d\udeab No stopping allowed"
+  },
+  {
+    "filename": "speed_limit.jpg",
+    "description": "\ud83d\udeab Speed limit 70 km/h"
+  },
+  {
+    "filename": "speed_limit2.png",
+    "description": "\ud83d\udeab Speed limit 60 km/h"
+  },
+  {
+    "filename": "stop_sign1.png",
+    "description": "\ud83d\uded1 Stop sign"
+  },
+  {
+    "filename": "stop_sign2.jpg",
+    "description": "\ud83d\uded1 Stop sign"
+  },
+  {
+    "filename": "stop_sign3.jpg",
+    "description": "\ud83d\uded1 Stop sign"
+  },
+  {
+    "filename": "turn_left.png",
+    "description": "\u2b05\ufe0f Turn left"
+  }
+]
